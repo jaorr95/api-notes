@@ -1,4 +1,4 @@
-# Prueba tecnica AIMO
+# Prueba técnica AIMO
 
 El desarrollo de esta prueba se hizo con python 3.8.3 en entorno de docker
 
@@ -6,7 +6,7 @@ Las pruebas y la [documentación](https://documenter.getpostman.com/view/595283/
 
 Para ejecutar el proyecto se debe ejecutar el siguiente comando:
 
-``` docker-compose up ``` o ``` docker-compose -d ```
+``` docker-compose up ``` o ``` docker-compose up -d ```
 
 Esperar a que se descarguen las dependencias y luego acceder a:
 
