@@ -1,5 +1,6 @@
 import sys
-sys.path.append("./")
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
 
 from bottle import request
 from truckpad.bottle.cors import CorsPlugin, enable_cors
