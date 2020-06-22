@@ -1,0 +1,77 @@
+html {
+	background:rgb(0, 46, 57);
+}
+
+.pt-35 {
+	padding-top: 35px;
+}
+
+.pl-35 {
+	margin-left: 20px;
+}
+
+.padding-note {
+
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.add-note-btn {
+	width: 100px;
+}
+
+.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+	opacity: .6;
+	z-index: 1000;
+}
+
+.loader .preloader-wrapper {
+	top: 50%;
+	margin-top: -25%;
+}
+
+.row.note-title, .row.note-title .badge {
+	margin-bottom: 0;
+	color: aquamarine;
+}
+
+.animation-notes {
+	-webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
+.notes-empty {
+	position: absolute;
+	
+	left: 0 !important;
+	width: 100%;
+}
+
+.tabs .indicator {
+	background-color: red;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+	background-color: rgba(37, 208, 160, 0.98);
+}
+
+div.card-content div.note-title span.card-title {
+	font-weight: bold;
+	color: white;
+}
+
+

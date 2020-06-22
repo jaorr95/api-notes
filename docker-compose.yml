@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+    api:
+        build: .
+        command: python api/src/controller/server.py
+        container_name: api-notes
+        volumes:
+            - ./api-notes/:/usr/src/app
+        ports:
+            - "8000:8000"
+        networks:
+            - aimo
+
+    web:
+        build: .
+        command: python /usr/src/app/client.py
+        container_name: web-notes
+        volumes:
+            - ./views/:/usr/src/app
+        ports:
+            - "5000:5000"
+        depends_on:
+            - api
+        networks:
+            - aimo
+
+networks:
+  aimo:
+    driver: bridge
+
